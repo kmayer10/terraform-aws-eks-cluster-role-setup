@@ -3,7 +3,7 @@ resource "aws_iam_role" "aws_iam_role" {
   tags = {
     "Name" = local.role_name
   }
-  assume_role_policy = jasonencode({
+  assume_role_policy = jsonencode({
     "Version": "2012-10-17"
     "Statement": [
       {
